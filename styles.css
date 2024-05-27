@@ -110,12 +110,5 @@ button:focus {
 
 .reset {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.reset button {
-    width: 360px;
-    background-color: #7A5C5C;
-    border: 5px solid #B30000;
-   
+    flex-direction: column; /* Modifica la direzione del layout per consentire il posizionamento verticale */
+    align-items: center; /* Allinea
