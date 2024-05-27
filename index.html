@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro e Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-selector">
+            <button id="modeStopwatch">Cronometro</button>
+            <div class="divider"></div>
+            <button id="modeTimer">Timer</button>
+        </div>
+        <div class="circle" id="display">00:00:00</div>
+        <div class="buttons">
+            <button id="startBtn">START</button>
+            <div class="divider"></div>
+            <button id="stopBtn">STOP</button>
+        </div>
+        <div class="reset">
+            <button id="resetBtn">RESET</button>
+            <img src="puckydraws banner.png" alt="PuckyDraws Banner" class="banner-img">
+        </div>
+    </div>
+    
+    <!-- Dialog for setting the timer -->
+    <div class="dialog" id="dialog">
+        <div class="dialog-content">
+            <div class="dialog-row">
+                <div class="dialog-column">
+                    <button class="dialog-btn" id="hoursUp">▲</button>
+                    <span class="dialog-value" id="hoursDisplay">00</span>
+                    <button class="dialog-btn" id="hoursDown">▼</button>
+                </div>
+                <div class="dialog-column">
+                    <button class="dialog-btn" id="minutesUp">▲</button>
+                    <span class="dialog-value" id="minutesDisplay">00</span>
+                    <button class="dialog-btn" id="minutesDown">▼</button>
+                </div>
+                <div class="dialog-column">
+                    <button class="dialog-btn" id="secondsUp">▲</button>
+                    <span class="dialog-value" id="secondsDisplay">00</span>
+                    <button class="dialog-btn" id="secondsDown">▼</button>
+                </div>
+            </div>
+            <button class="dialog-set-btn" id="setTimerBtn">SET TIMER</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
